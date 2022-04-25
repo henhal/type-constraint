@@ -1,0 +1,25 @@
+{
+  "name": "type-constraint",
+  "version": "1.0.0",
+  "description": "A helper for declaring TypeScript literals so that they conform to a type constraint but are still inferred to their specific type.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "repository": "git@github.com:henhal/type-constraint.git",
+  "author": "Henrik Hall",
+  "license": "Apache",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "clean": "rm -rf dist && rm -f tsconfig.tsbuildinfo",
+    "prepublish": "yarn clean && yarn build"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}

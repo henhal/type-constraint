@@ -7,6 +7,14 @@
   "files": [
     "dist/"
   ],
+  "keywords": [
+    "typescript",
+    "typesafe",
+    "type-safety",
+    "constraint",
+    "api",
+    "implementation"
+  ],
   "repository": "git@github.com:henhal/type-constraint.git",
   "author": "Henrik Hall",
   "license": "Apache",

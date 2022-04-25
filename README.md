@@ -82,11 +82,11 @@ const subImpl2 = api.pick({
 const impl: Api = {...subImpl1, ...subImpl2}; // subImpl1 & subImpl2 makes out the complete interface! :+1:
 ```
 
-Both requirements are fulfilled! :+1:
+All the requirements are fulfilled! :+1:
 
-* Sub-parts are type-checked against full interface :white_check_mark:
-* Sub-parts have their type inferred to the specific part of the full interface :white_check_mark:
-* Combined sub-parts are type-checked to make out the full interface :white_check_mark:
+* Sub-parts are type-checked against the full interface to eliminate spelling mistakes and incorrectly implemented methods :white_check_mark:
+* Sub-parts have their type inferred to their specific part of the full interface :white_check_mark:
+* Combined sub-parts can be verified to make out the full interface at compile time :white_check_mark:
 
 
 Examples of errors found in compile time using `type-constraint`:

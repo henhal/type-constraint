@@ -66,6 +66,8 @@ const impl: Api = {...subImpl1, ...subImpl2}; // Does not compile since the comp
 ### With `type-constraint`
 
 ```
+import Constraint from 'type-constraint';
+
 const api = Constraint.of<Api>();
 
 const subImpl1 = api.pick({
